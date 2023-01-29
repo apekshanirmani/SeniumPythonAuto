@@ -38,8 +38,8 @@ def get_driver(request, get_browser):
     print("Enter browser: " + get_browser)
 
     if get_browser == "chrome":
-        # service_obj = Service("/drivers/chromedriver.exe")
-        service_obj = Service(ChromeDriverManager().install())
+        service_obj = Service("/drivers/chromedriver.exe")
+        # service_obj = Service(ChromeDriverManager().install())
         # driver = webdriver.Chrome(service=service_obj)
         driver = webdriver.Chrome(service=service_obj)
 
